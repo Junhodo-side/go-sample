@@ -9,5 +9,5 @@ COPY . .
 RUN go mod download
 RUN go install cmd/main.go
 
-EXPOST 9090
+EXPOSE 9090
 ENTRYPOINT [ "/go/bin/main" ]
